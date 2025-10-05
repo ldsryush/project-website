@@ -1,0 +1,63 @@
+/* Basic styles for our portfolio */
+body {
+    font-family: sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Light Theme (Default) */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Dark Theme */
+body.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+header, main, footer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ccc;
+}
+
+header.dark-mode {
+    border-bottom: 2px solid #555;
+}
+
+#projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+body.dark-mode .project-card {
+    border-color: #555;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px solid #eee;
+}
+
+body.dark-mode footer {
+    border-top: 1px solid #555;
+}
