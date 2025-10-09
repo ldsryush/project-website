@@ -1,10 +1,15 @@
 /* Basic styles for our portfolio */
 body {
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
     transition: background-color 0.3s, color 0.3s;
     line-height: 1.6;
     margin: 0;
     padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
 }
 
 /* Light Theme (Default) */
