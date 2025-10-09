@@ -1,4 +1,13 @@
-/* Basic styles for our portfolio */
+:root {
+    --primary-color: #2563eb;
+    --primary-hover: #1d4ed8;
+    --secondary-color: #64748b;
+    --accent-color: #0f172a;
+    --background-light: #f8fafc;
+    --background-dark: #1e293b;
+    --text-light: #334155;
+    --text-dark: #e2e8f0;
+}
 body {
     font-family: 'Open Sans', sans-serif;
     transition: background-color 0.3s, color 0.3s;
@@ -12,16 +21,16 @@ h1, h2, h3 {
     font-weight: 600;
 }
 
-/* Light Theme (Default) */
+/* Light Theme */
 body {
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: var(--background-light);
+    color: var(--text-light);
 }
 
 /* Dark Theme */
 body.dark-mode {
-    background-color: #333;
-    color: #f4f4f4;
+    background-color: var(--background-dark);
+    color: var(--text-dark);
 }
 
 header, main, footer {
